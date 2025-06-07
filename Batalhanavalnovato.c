@@ -26,7 +26,7 @@ void Tabuleiro(int tabuleiro[10][10]){
     printf("\n");
     printf("  A B C D E F G H I J \n");
   // Imprime as letras das colunas
-    for (int i = 0; i < COLUNASS; i++) {
+    for (int i = 0; i < COLUNAS; i++) {
         printf("%d ", i + 1); 
     // Imprime os números das linhas
     for (int j = 0; j < LINHAS; j++) {
