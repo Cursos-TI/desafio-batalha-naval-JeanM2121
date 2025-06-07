@@ -48,11 +48,11 @@ void Tabuleiro1(int tabuleiro[LINHAS][LINHAS]) {
 int main() {
     int tabuleiro[LINHAS][LINHAS] = {0};
    
-    Navio4(tabuleiro, 6, 2, 3);
-    Navio3(tabuleiro, 8, 8, 3);
-    Navio2(tabuleiro, 1, 2, 3);
-    Navio1(tabuleiro, 3, 5, 3);
-    Tabuleiro1(tabuleiro);
+   Navio4(tabuleiro, 1, 5, 3); //Diagonal
+    Navio3(tabuleiro, 3, 8, 3); //Diagonal
+    Navio2(tabuleiro, 5, 9, 3); //Vertical
+    Navio1(tabuleiro, 5, 1, 3); //Horinzontal
+    Tabuleiro1(tabuleiro); //Tabuleiro
    
 
     return 0;
