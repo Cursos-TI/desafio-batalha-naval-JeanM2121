@@ -3,25 +3,43 @@
 #define LINHAS 10
 #define COLUNAS 10
 
-void Navio4(int tabuleiro[LINHAS][LINHAS], int x, int y, int tamanho) {
-    for (int i = 0; i < tamanho; i++) {
-        tabuleiro[x + i][y + i] = 4; // Navio4
+void Octaedro(int tabuleiro[LINHAS][COLUNAS], int x, int y, int tamanho){
+    for (int o = 0; o < tamanho; o++){
+        tabuleiro[x + o][y] = 7; //Octaedro
+    }
+    
+}
+void Cruz(int tabuleiro[LINHAS][COLUNAS], int x, int y, int tamanho) {
+    for (int n = 0; n < tamanho; n++) {
+        tabuleiro[x][y - n] = 6; //Cruz 
     }
 }
 
-void Navio3(int tabuleiro[LINHAS][LINHAS], int x, int y, int tamanho) {
-    for (int i = 0; i < tamanho; i++) {
-        tabuleiro[x - i][y - i] = 3; // Navio3
+void Cone(int tabuleiro[LINHAS][COLUNAS], int x, int y, int tamanho) {
+    for (int m = 0; m < tamanho; m++) {
+        tabuleiro[x][y + m] = 5; //Cone 
     }
 }
-void Navio2(int tabuleiro[LINHAS][LINHAS], int x, int y, int tamanho) {
-    for (int i = 0; i < tamanho; i++) {
-        tabuleiro[x + i][y] = 2; // Navio2
+
+void Navio4(int tabuleiro[LINHAS][COLUNAS], int x, int y, int tamanho) {
+    for (int l = 0; l < tamanho; l++) {
+        tabuleiro[x + l][y + l] = 4; //Navio4
     }
 }
-void Navio1(int tabuleiro[LINHAS][LINHAS], int x, int y, int tamanho) {
+
+void Navio3(int tabuleiro[LINHAS][COLUNAS], int x, int y, int tamanho) {
+    for (int k = 0; k < tamanho; k++) {
+        tabuleiro[x - k][y - k] = 3; //Navio3
+    }
+}
+void Navio2(int tabuleiro[LINHAS][COLUNAS], int x, int y, int tamanho) {
+    for (int j = 0; j < tamanho; j++) {
+        tabuleiro[x + j][y] = 2; //Navio2
+    }
+}
+void Navio1(int tabuleiro[LINHAS][COLUNAS], int x, int y, int tamanho) {
     for (int i = 0; i < tamanho; i++) {
-        tabuleiro[x][y + i] = 1; // Navio1
+        tabuleiro[x][y + i] = 1; //Navio1
     }
 }
 void Tabuleiro1(int tabuleiro[LINHAS][LINHAS]) {
