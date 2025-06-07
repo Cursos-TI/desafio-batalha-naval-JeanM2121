@@ -25,7 +25,7 @@ void Navio1(int tabuleiro[LINHAS][COLUNAS], int x, int y, int tamanho) {
         tabuleiro[x][y + i] = 1; //Navio1
     }
 }
-void Tabuleiro1(int tabuleiro[LINHAS][LINHAS]) {
+void Tabuleiro1(int tabuleiro[LINHAS][COLUNAS]) {
     printf("BATALHA NAVAL \n");
     printf("0 agua\n");
     printf("1 Navio1\n");
@@ -36,7 +36,7 @@ void Tabuleiro1(int tabuleiro[LINHAS][LINHAS]) {
     printf("\n");
     printf("  A B C D E F G H I J\n");
      // Imprime as letras das colunas
-    for (int i = 0; i < LINHAS; i++) {
+    for (int i = 0; i < COLUNAS; i++) {
         printf("%d ", i + 1); 
         // Imprime os números das linhas
         for (int j = 0; j < LINHAS; j++) {
