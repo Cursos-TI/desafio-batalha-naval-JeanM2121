@@ -20,7 +20,7 @@ void Navio2(int tabuleiro[10][10], int x, int y, int tamanho){
 void Tabuleiro(int tabuleiro[10][10]){
     
     printf("BATALHA NAVAL\n");
-    printf("0 representa agua \n");
+    printf("0 agua \n");
     printf("Navio 1 \n");
     printf("Navio 2 \n");
     printf("\n");
