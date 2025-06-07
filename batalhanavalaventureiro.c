@@ -47,7 +47,7 @@ void Tabuleiro1(int tabuleiro[LINHAS][LINHAS]) {
 }
 // Posição dos navios
 int main() {
-    int tabuleiro[LINHAS][LINHAS] = {0};
+    int tabuleiro[LINHAS][COLUNAS] = {0};
    
    Navio4(tabuleiro, 1, 5, 3); //Diagonal
     Navio3(tabuleiro, 3, 8, 3); //Diagonal
