@@ -25,20 +25,23 @@ void Tabuleiro(int tabuleiro[10][10]){
     printf("Navio 2 \n");
     printf("\n");
     printf("  A B C D E F G H I J \n");
-    for (int i = 0; i < 10; i++){
-        printf("%d ", i + 1);
-        for (int j = 0; j < 10; j++){
-            printf("%d ", tabuleiro[i][j]);
+  // Imprime as letras das colunas
+    for (int i = 0; i < LINHAS; i++) {
+        printf("%d ", i + 1); 
+    // Imprime os números das linhas
+    for (int j = 0; j < LINHAS; j++) {
+        printf("%d ", tabuleiro[i][j]);
         }
-        printf("\n");   
-    }   
+        printf("\n");        
+    }
 }
+
 //Posições dos navios 
 int main(){
     int tabuleiro[10][10] = {0};
     Navio1(tabuleiro, 3, 3, 3); //Horizontal
     Navio2(tabuleiro, 5, 5, 3); //Vertical
-    Tabuleiro(tabuleiro);
+    Tabuleiro(tabuleiro); //Tabuleiro
 
     return 0;
 }
