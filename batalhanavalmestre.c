@@ -68,19 +68,19 @@ void Tabuleiro1(int tabuleiro[LINHAS][COLUNAS]) {
 
 int main() {
     int tabuleiro[LINHAS][COLUNAS] = {0};
-// Posição dos octaedros
+// Posição dos Octaedros
     Octaedro(tabuleiro, 8, 3, 1);
     Octaedro(tabuleiro, 8, 1, 1);
     Octaedro(tabuleiro, 7, 2, 3);
-// Posição das cruzes
+// Posição das Cruzes
     Cruz(tabuleiro, 7, 5, 1);
     Cruz(tabuleiro, 5, 5, 1);
     Cruz(tabuleiro, 6, 7, 5);
-// Posição dos cones
+// Posição dos Cones
     Cone(tabuleiro, 2, 3, 1);
     Cone(tabuleiro, 3, 2, 3);
     Cone(tabuleiro, 4, 1, 5);
-// Posição dos navios
+// Posição dos Navios
     Navio4(tabuleiro, 1, 5, 3); //Diagonal
     Navio3(tabuleiro, 3, 8, 3); //Diagonal
     Navio2(tabuleiro, 5, 9, 3); //Vertical
