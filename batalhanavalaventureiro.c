@@ -39,8 +39,8 @@ void Tabuleiro1(int tabuleiro[LINHAS][COLUNAS]) {
     for (int i = 0; i < COLUNAS; i++) {
         printf("%d ", i + 1); 
         // Imprime os números das linhas
-        for (int j = 0; j < LINHAS; j++) {
-            printf("%d ", tabuleiro[i][j]);
+    for (int j = 0; j < LINHAS; j++) {
+        printf("%d ", tabuleiro[i][j]);
         }
         printf("\n");        
     }
@@ -49,7 +49,7 @@ void Tabuleiro1(int tabuleiro[LINHAS][COLUNAS]) {
 int main() {
     int tabuleiro[LINHAS][COLUNAS] = {0};
    
-   Navio4(tabuleiro, 1, 5, 3); //Diagonal
+    Navio4(tabuleiro, 1, 5, 3); //Diagonal
     Navio3(tabuleiro, 3, 8, 3); //Diagonal
     Navio2(tabuleiro, 5, 9, 3); //Vertical
     Navio1(tabuleiro, 5, 1, 3); //Horinzontal
