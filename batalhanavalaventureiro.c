@@ -3,23 +3,6 @@
 #define LINHAS 10
 #define COLUNAS 10
 
-void Octaedro(int tabuleiro[LINHAS][COLUNAS], int x, int y, int tamanho){
-    for (int o = 0; o < tamanho; o++){
-        tabuleiro[x + o][y] = 7; //Octaedro
-    }
-    
-}
-void Cruz(int tabuleiro[LINHAS][COLUNAS], int x, int y, int tamanho) {
-    for (int n = 0; n < tamanho; n++) {
-        tabuleiro[x][y - n] = 6; //Cruz 
-    }
-}
-
-void Cone(int tabuleiro[LINHAS][COLUNAS], int x, int y, int tamanho) {
-    for (int m = 0; m < tamanho; m++) {
-        tabuleiro[x][y + m] = 5; //Cone 
-    }
-}
 
 void Navio4(int tabuleiro[LINHAS][COLUNAS], int x, int y, int tamanho) {
     for (int l = 0; l < tamanho; l++) {
